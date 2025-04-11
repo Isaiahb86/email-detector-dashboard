@@ -15,7 +15,7 @@ clean_snippets = [
 
 os.makedirs("emails", exist_ok=True)
 
-for i in range(10):
+for i in range(17):
     with open(f"emails/email_{i}.txt", "w") as f:
         if random.random() < 0.5:
             f.write(random.choice(malicious_snippets))
